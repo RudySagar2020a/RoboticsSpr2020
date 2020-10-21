@@ -12,4 +12,14 @@ workspace = [-10 10 -5 5 0 5];
 
 %% Environment Setup
 
+
+
+%%Kuka Robot Setup
+kuka = Kuka(false);
+
+kukabasepose = [0,0,0];
+
+kuka.model.base = transl(kukabasepose)*trotx(pi/2);
+kuka.PlotAndColourRobot();
+
 %% Main Executable
