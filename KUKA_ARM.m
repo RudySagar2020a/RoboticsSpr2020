@@ -14,7 +14,7 @@ classdef Kuka < handle
         useGripper = false;        
     end
     
-    methods%% Class for UR5 robot simulation
+    methods%% Class for Kuka LWR robot simulation
 function self = Kuka(useGripper)
     if nargin < 1
         useGripper = false;
@@ -30,8 +30,8 @@ self.GetKukaRobot();
 self.PlotAndColourRobot();%robot,workspace);
 end
 
-%% GetUR5Robot
-% Given a name (optional), create and return a UR5 robot model
+%% GetKukaRobot
+% Given a name (optional), create and return a Kuka robot model
 function GetKukaRobot(self)
 %     if nargin < 1
         % Create a unique name (ms timestamp after 1ms pause)
